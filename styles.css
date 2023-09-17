@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@font-face {
+    font-family: myFont;
+    src: url(good\ times\ rg.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: myFont;
+}
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    padding: 120px;
+    font-weight: bold;
+    font-size: 20px;
+    box-sizing:border-box;
+    display: grid;
+    border: 3px solid rgb(115, 99, 153);
+    background: #130217;
+    
+
+    
+    grid-template:  50px 1fr 1fr 100px / repeat(3,1fr);
+}
+
+  
+.glow{
+    color: #ded2e6 ;
+    margin-bottom: 20px;
+    font-size:29px;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #7f5ddd, 0 0 20px #5684da, 0 0 30px #0b39d3, 0 0 40px #1a45d3, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #4e7eb4, 0 0 30px #5853a3, 0 0 40px #5641b4, 0 0 50px #34299b, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+    
+
+.container h1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+label, input {
+    display: block;
+    margin-bottom: 10px;
+    height:12px;
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 23px;
+    
+    
+}
+.main{
+    grid-row: 1/4;
+    grid-column: 1/4;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 60px;
+    text-align: center;
+    border: 3px solid rgb(115, 99, 153);
+    margin: auto;
+    height: 535px;
+    width: 500px;
+    border-radius: 15px;
+    padding: 20px;
+    background: #130217;
+    box-shadow: inset 20px 20px 60px #100214,
+            inset -20px -20px 60px #16021a;
+}
+
+.main button{
+    display: flex;
+}
+button{
+    margin: 35px 0;
+    padding: 15px;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+    color: #d5d7df;
+
+}
+.main h1{
+    display: flex;
+    text-align: center;
+    
+}
+button {
+    width: 10em;
+    position: relative;
+    height: 3.5em;
+    border: 3px ridge #149CEA;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    transition: 1s;
+    border-radius: 0.3em;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  button::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: #665fbe;
+    transition: 0.8s;
+    transform-origin: center;
+  }
+  
+  button::before {
+    content: "";
+    transform-origin: center;
+    position: absolute;
+    top: 80%;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: rgb(59, 32, 102);
+    transition: 0.8s;
+    border-radius: 3px;
+  }
+  
+  button:hover::before, button:hover::after {
+    transform: scale(0)
+  }
+  
+  button:hover {
+    box-shadow: inset 0px 0px 25px #1479EA;
+  }
+  input{
+    color: #149CEA;
+  }
